@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BIF.Model.Customer">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAEAAAAQAAAACABAgAAAAAAAAAAA=</HashCode>
+      <FileName>Customer\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CustomerType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BIF.Model.Account">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BIF.Model.CustomerType">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAgAAAAAAAAAAQAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Customer\CustomerType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BIF.Model.BusinessProfile">
+    <Position X="3.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAgAAggAAAAgAAAAAAABACAAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Customer\BusinessProfile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BIF.Model.User">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <AssociationLine Name="Organisation" Type="BIF.Model.Organisation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="3.875" />
+        <Point X="3.006" Y="3.875" />
+        <Point X="3.006" Y="5.927" />
+        <Point X="6.484" Y="5.927" />
+        <Point X="6.484" Y="4.125" />
+        <Point X="7" Y="4.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAQAAAAgAAAACAAACAAAAEAAAAAA=</HashCode>
+      <FileName>User\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BusinessProfile" />
+      <Property Name="Organisation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BIF.Model.PersonalUserInfo">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAgAAAAAAAABAACAEAAAAAAAAAAgAA=</HashCode>
+      <FileName>User\PersonalUserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BIF.Model.Organisation">
+    <Position X="7" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAQAAAAAAAAAAAAQAAAAAACAAAgAAIAAAAAAAA=</HashCode>
+      <FileName>Organisation\Organisation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrganisationType" />
+      <Property Name="BusinessProfile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BIF.Model.OrganisationType">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAIAQAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Organisation\OrganisationType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BIF.Model.OrganisationAccess">
+    <Position X="7.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAICAAAAAAEAAAAAA=</HashCode>
+      <FileName>Organisation\OrganisationAccess.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Organisation" />
+      <Property Name="AppPermissions" />
+      <Property Name="ModulePermissions" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BIF.Model.PermissionType">
+    <Position X="11.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAACBAAAAAAA=</HashCode>
+      <FileName>Permission\PermissionType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
